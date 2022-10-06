@@ -1,0 +1,61 @@
+.calendar{
+  width: 800px;
+  height: 700px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  .date{
+    width: 50%;
+  }
+  .month{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .arrow-left, .arrow-right{
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .month h1{
+    font-size: 45px;
+    margin: 15px 0;
+  }
+  .month p {
+    font-size: 24px;
+  }
+  .weekdays{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .weekdays div, .days div{
+    width: calc(100%/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: grey;
+  }
+  .days div{
+    padding: 20px 0;
+  }
+  .current-date{
+    background-color: cornflowerblue;
+    border-radius: 15px;
+    color: red;
+    font-weight: bold;
+  }
+  .prev-date,.next-date{
+    opacity: 0.5;
+  }
+}
